@@ -1,0 +1,19 @@
+#!/bin/bash
+
+cat $HOME/simonsecpi/sspiascii
+
+echo " - - - - SimonSecPiOS Ultility - - - -"
+echo "1.First Time Setup"
+echo "2.Networking"
+
+read -p "SELECT MENU : " menu_chosen
+
+if [ "$menu_chosen" == "1" ]
+then
+ bash "$HOME/simonsecpi/commands/fts/fts.sh"
+fi
+
+if [ "$menu_chosen" == "2" ]
+then
+ bash "$HOME/simonsecpi/commands/net/net.sh"
+fi
