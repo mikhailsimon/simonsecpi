@@ -4,7 +4,7 @@ echo "Setting Up SSH Server"
 
 echo "Banner /etc/simonsecpiosbanner" | sudo tee -a /etc/ssh/sshd_config
 
-cat $HOME/simonsecpi/commands/fts/banner.txt > $HOME/simonsecpi/ali
+cat $HOME/simonsecpi/commands/fts/banner.txt > /etc/simonsecpiosbanner
 
 cat $HOME/simonsec/commands/fts/motd.txt > sudo tee /etc/motd
 
